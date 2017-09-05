@@ -1,0 +1,319 @@
+h()
+  columns = 0 1 2 3 4
+  for col in columns
+    .h-{col}
+      width (col/columns[-1]*100) + '%'
+      flex-basis auto
+      box-sizing border-box
+      display block
+      padding-left 5px
+      padding-right 5px
+  for col in columns
+    .h-offset-{col}
+      margin-left: (col/columns[-1]*100) + '%'
+
+t()
+  columns = 0 1 2 3 4
+  for col in columns
+    .t-{col}
+      width (col/columns[-1]*100) + '%'
+      flex-basis auto
+      box-sizing border-box
+      display block
+      padding-left 11px
+      padding-right 11px
+  for col in columns
+    .t-offset-{col}
+      margin-left: (col/columns[-1]*100) + '%'
+
+d()
+  columns = 0 1 2 3 4
+  for col in columns
+    .d-{col}
+      width (col/columns[-1]*100) + '%'
+      flex-basis auto
+      box-sizing border-box
+      display block
+      padding-left 20px
+      padding-right 20px
+  for col in columns
+    .d-offset-{col}
+      margin-left: (col/columns[-1]*100) + '%'
+
+d-screen = 1280px
+t-screen = 768px
+h-screen = 320px
+
+.cnt
+  box-sizing border-box
+  padding 0 18px
+  width: 100%
+  @media(min-width: t-screen)
+    padding 0 33px
+    width 100%
+  @media(min-width: d-screen)
+    padding 0 170px
+    margin 0 auto
+
+.row
+  flex-basis 100%
+  margin 0 auto
+  flex-grow 1
+  display flex
+  display -webkit-flex
+  flex-flow column
+  justify-content flex-start
+  align-content flex-start
+  > *
+    box-sizing border-box
+  @media(min-width 768px)
+    max-width 680px
+    flex-flow row wrap
+  @media(min-width 1280px)
+    max-width 940px
+    flex-flow row wrap
+
+input
+  width 214px
+  height 52px
+  border 1px solid #b5b5b5
+  background-color rgba(0, 0, 0, 0.3)
+  opacity 0.6
+  color #ffffff
+  font-family Rubik
+  font-size 14px
+  font-weight 400
+  letter-spacing 1px
+  padding 17px 24px
+  text-align left
+  box-sizing border-box
+  transition all 0.2s ease
+  &:hover
+    border 1px solid #ffffff
+  @media (min-width 768px)
+    width 222px
+    height 52px
+    font-size 15px
+    font-weight 400
+    letter-spacing 1px
+  @media (min-width 1280px)
+    width 240px
+    height 52px
+    font-size 16px
+    font-weight 400
+    letter-spacing 1px
+
+
+.button-white
+  width 214px
+  height 52px
+  box-shadow 0 0 14px rgba(255, 255, 255, 0.2)
+  background-color #ffffff
+  color #1f1a15
+  font-family Rubik
+  font-size 14px
+  font-weight 900
+  letter-spacing 1px
+  border none
+  transition all 0.2s ease
+  &:hover
+    box-shadow 0 0 15px rgba(255, 255, 255, 0.5)
+    background-color #ffffff
+  @media (min-width 768px)
+    width 222px
+    height 52px
+    font-size 15px
+    font-weight 900
+    letter-spacing 1px
+  @media (min-width 1280px)
+    width 240px
+    height 52px
+    font-size 16px
+    font-weight 900
+    letter-spacing 1px
+
+.button-gold
+  width 214px
+  height 52px
+  box-shadow 0 0 15px #dcbf6a
+  background-color #dcbf6a
+  color #1f1a15
+  font-family Rubik
+  font-size 14px
+  font-weight 900
+  letter-spacing 1px
+  border none
+  transition all 0.2s ease
+  &:hover
+    box-shadow 0 0 15px #dcbf6a
+    background-color #c9ae61
+  @media (min-width 768px)
+    width 222px
+    height 52px
+    font-size 15px
+    font-weight 900
+    letter-spacing 1px
+  @media (min-width 1280px)
+    width 240px
+    height 52px
+    font-size 16px
+    font-weight 900
+    letter-spacing 1px
+
+h1
+  color #f8f8f8
+  font-family "Intro"
+  font-size 34px
+  line-height 36px
+  text-transform uppercase
+  text-align center
+  font-weight 900
+  @media (min-width 768px)
+    font-size 38px
+    letter-spacing 1px
+  @media (min-width 1280px)
+    font-size 42px
+
+h2
+  height auto
+  color #222222
+  font-family "Intro"
+  font-size 24px
+  line-height 25px
+  font-weight 600
+  text-transform uppercase
+  text-align center
+  @media (min-width 768px)
+    font-size 36px
+    line-height 37px
+    font-weight 600
+
+h3
+  color #454545
+  font-family "Intro"
+  font-size 26px
+  line-height 28px
+  text-transform uppercase
+
+
+p
+  color #2d2d2d
+  font-family "Rubik"
+  font-size 14px
+  font-weight 300
+  letter-spacing 1px
+  @media (min-width 768px)
+    font-size 18px
+    font-weight 300
+
+.text-gold
+  opacity 0.9
+  color #c5a548
+  font-family "Intro"
+  font-size 14px
+  font-weight 400
+  text-transform uppercase
+  line-height 15px
+
+
+hr
+  width 140px
+  height 0
+  border 1px solid #c5a548
+  background-color #c5a548
+  @media (min-width 768px)
+    width 240px
+
+
+
+
+
+
+////---PLACEHOLDERS---////
+input[type='text']::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #bfbfbf !important;
+}
+
+input[type='text']::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #bfbfbf !important;
+}
+
+input[type='text']:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #bfbfbf !important;
+}
+
+input[type='text']:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #bfbfbf !important;
+}
+
+input[type='text']:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+input[type='text']:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+input[type='text']:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+input[type='text']:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+textarea::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #bfbfbf !important;
+}
+
+textarea::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #bfbfbf !important;
+}
+
+textarea:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #bfbfbf !important;
+}
+
+textarea:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: #bfbfbf !important;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+textarea:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+textarea:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+textarea:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}

@@ -1,0 +1,80 @@
+.block5
+  width 100%
+  height auto
+  background-color #f8f8f8
+  padding-top 56px
+  padding-bottom 26px
+  margin-bottom 56px
+  display flex
+  display -webkit-flex
+  justify-content center
+  align-items center
+  flex-direction column
+
+  .block5-content
+    width 100%
+    height auto
+    max-width 780px
+
+    .block5-head
+      width 100%
+      height auto
+
+      h2
+        margin-bottom 16px
+
+      hr
+        margin-bottom 20px
+
+
+    .slider
+      width 100%
+      height auto
+      position relative
+
+      .slick-slider
+        width 100%
+        height 180px
+
+      .slick-slide
+        width 100%
+        height 180px
+        display flex
+        display -webkit-flex
+        justify-content center
+        align-items center
+        @media (min-width 768px)
+          width 200px
+          height 180px
+
+        img
+          width 80%
+          @media (min-width 1280px)
+            width 100px
+            height 100px
+
+
+
+.prev
+  width 16px
+  height 29px
+  background-image url("img/prev.svg")
+  background-size auto
+  background-repeat no-repeat
+  background-position center center
+  position absolute
+  top 50%
+  left 0
+  z-index 2
+
+.next
+  width 16px
+  height 29px
+  background-image url("img/next.svg")
+  background-size auto
+  background-repeat no-repeat
+  background-position center center
+  position absolute
+  top 50%
+  right 0
+  z-index 2

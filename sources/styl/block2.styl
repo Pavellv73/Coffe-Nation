@@ -1,0 +1,159 @@
+.block2
+  width 100%
+  height auto
+  background-color #f8f8f8
+
+  .block2-content
+    width 100%
+    height auto
+
+
+    .block2-head
+      padding-top 56px
+      margin-bottom 16px
+
+      hr
+        margin-bottom 40px
+
+    .varieties-blocks
+      width 100%
+      height auto
+      display flex
+      display -webkit-flex
+      justify-content space-around
+      align-items center
+      flex-flow row wrap
+      @media (min-width 768px)
+        justify-content space-around
+      @media (min-width 1280px)
+        justify-content space-between
+
+      .variety-block
+        width 290px
+        height 232px
+        box-shadow 0 5px 20px rgba(0, 0, 0, 0.1)
+        background-color #ffffff
+        margin-bottom 40px
+        display flex
+        display -webkit-flex
+        justify-content center
+        align-items flex-end
+        flex-direction column
+        transition all 0.2s ease
+        &:hover
+          box-shadow 0 10px 40px rgba(0, 0, 0, 0.2)
+        &:nth-of-type(1)
+          background-image url("img/brazil.png")
+          background-repeat no-repeat
+          background-size auto
+          background-position left center
+        &:nth-of-type(2)
+          background-image url("img/supremo.png")
+          background-repeat no-repeat
+          background-size auto
+          background-position left center
+        &:nth-of-type(3)
+          background-image url("img/efiopia.png")
+          background-repeat no-repeat
+          background-size auto
+          background-position left center
+        &:nth-of-type(4)
+          background-image url("img/espresso.png")
+          background-repeat no-repeat
+          background-size auto
+          background-position left center
+        &:nth-of-type(5)
+          background-image url("img/vending.png")
+          background-repeat no-repeat
+          background-size auto
+          background-position left center
+        &:nth-of-type(6)
+          background-image url("img/probnik.png")
+          background-repeat no-repeat
+          background-size auto
+          background-position left center
+
+        h3
+          width 164px
+          margin-bottom 38px
+
+        .text-gold
+          width 164px
+
+          a
+            color #444444
+            transition all 0.2s ease
+            &:hover
+              color: #000000
+
+#questionnaire-popup
+  display none
+
+.logo-popup
+  width 100%
+  height auto
+  margin 0 auto
+  background-color #ffffff
+  border-radius 10px 10px
+  padding 20px 15px
+  box-sizing border-box
+  display flex
+  display -webkit-flex
+  justify-content center
+  align-items center
+  flex-direction column
+  @media (min-width 768px)
+    width 95%
+  @media (min-width 1280px)
+    width 104%
+
+
+  .logo-block
+    width 100%
+    height auto
+    display flex
+    display -webkit-flex
+    justify-content center
+    align-items center
+    flex-direction column
+    @media (min-width 768px)
+      width 100%
+      flex-direction row
+      margin-bottom 20px
+
+    img
+      margin-bottom 15px
+
+    p
+      width auto
+      font-family "Intro"
+      font-size 22px
+      font-weight 600
+      text-transform uppercase
+      color #454545
+      text-align center
+      margin-bottom 16px
+      @media (min-width 768px)
+        width 78%
+
+      span
+        color #b89638
+
+  form
+    width 100%
+    height auto
+    display flex
+    display -webkit-flex
+    justify-content center
+    align-items center
+    flex-direction column
+    @media (min-width 768px)
+      flex-direction row
+      justify-content space-between
+
+    input
+      margin-bottom 16px
+      @media (min-width 768px)
+        margin-bottom 0
+
+

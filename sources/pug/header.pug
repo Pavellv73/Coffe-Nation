@@ -1,0 +1,45 @@
+header.cnt
+    div.header-content.row
+        div.block-logo
+            img(src="img/logo-full.png")
+        div.phone-block
+            a(href="tel:89088918290") 8 908 891 82 90
+            span звонок бесплатный
+
+    div.block1
+        div.block1-content
+            div.block1-head
+                span Оптовая продажа<br>
+                h1 обжаренного кофе в зёрнах
+
+                p для кафе, кофеен, ресторанов, кофе с собой и организаций
+
+
+            div.steps-block
+                div.step
+                    div.step-img
+                        img(src="img/b1-icon1.svg")
+                    div.step-text
+                        p БЕСПЛАТНАЯ ПАЧКА <br> КОФЕ НА ПРОБУ
+                div.step
+                    div.step-img
+                        img(src="img/b1-icon2.svg")
+                    div.step-text
+                        p СОБСТВЕННАЯ <br> ОБЖАРКА КОФЕ
+                div.step
+                    div.step-img
+                        img(src="img/b1-icon3.svg")
+                    div.step-text
+                        p ДОСТАВКА В <br> ТЕЧЕНИЕ 5 ДНЕЙ
+                div.step
+                    div.step-img
+                        img(src="img/b1-icon4.svg")
+                    div.step-text
+                        p ОТСРОЧКА ПЛАТЕЖА <br> ДО 10 ДНЕЙ
+
+
+            form(method="post" action="mailer.php")
+                input(type="email" name="email" placeholder="E-mail" required="required")
+                input(type="tel" name="phone" placeholder="Контактный телефон" class="phone" required="required")
+                input(type="hidden" name="download" value="true")
+                button.button-white(type="submit") Скачать прайс-лист

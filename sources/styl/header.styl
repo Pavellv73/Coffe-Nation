@@ -1,0 +1,234 @@
+header
+  width 100%
+  height auto
+  background-image url("img/b1-bg.png")
+  background-position center
+  background-repeat no-repeat
+  background-size auto
+  @media (min-width 1280px)
+    background-size cover
+
+  .header-content
+    width 100%
+    height auto
+    display flex
+    display -webkit-flex
+    justify-content center
+    align-items center
+    flex-direction row
+    padding-top 15px
+    @media (min-width 768px)
+      justify-content space-between
+      margin-bottom 20px
+    @media (min-width 1280px)
+      margin-bottom 32px
+
+
+    .block-logo
+      width 45%
+      height auto
+      @media (min-width 768px)
+        width 177px
+        height auto
+      @media (min-width 1280px)
+        height 120px
+        width 600px
+        display flex
+        display -webkit-flex
+        justify-content flex-end
+        align-items center
+
+      img
+        width 100%
+        height auto
+        @media (min-width 768px)
+          width auto
+          height auto
+
+    .phone-block
+      width 55%
+      height auto
+      display flex
+      display -webkit-flex
+      justify-content center
+      align-items center
+      flex-direction column
+      @media (min-width 768px)
+        width auto
+
+      a
+        color #ffffff
+        font-family "Intro"
+        font-size 18px
+        font-weight 600
+        text-transform uppercase
+        letter-spacing 1px
+        transition all 0.2s ease
+        &:hover
+          box-shadow rgba(255, 255, 255, 0.59)
+        @media (min-width 768px)
+          font-size 22px
+
+      span
+        opacity 0.9
+        color #ffffff
+        font-family "Intro Book"
+        font-size 12px
+        font-weight 400
+        text-transform uppercase
+        @media (min-width 768px)
+          font-size 14px
+
+
+  .block1
+    width 100%
+    height auto
+
+    .block1-content
+      width 100%
+      height auto
+      display flex
+      display -webkit-flex
+      flex-direction column
+      justify-content center
+      align-items center
+
+      .block1-head
+        width 100%
+        height auto
+        display flex
+        display -webkit-flex
+        justify-content center
+        align-items center
+        flex-direction column
+        margin-bottom 40px
+        @media (min-width 768px)
+          margin-bottom 91px
+        @media (min-width 1280px)
+          margin-bottom 54px
+
+        span
+          color #f8f8f8
+          font-family "Intro"
+          font-size 18px
+          text-transform uppercase
+          text-align center
+          margin-bottom 4px
+          font-weight 900
+          @media (min-width 768px)
+            font-size 26px
+            letter-spacing 1px
+          @media (min-width 1280px)
+            font-size 30px
+            margin-bottom 10px
+
+        h1
+          margin-bottom 24px
+          @media (min-width 768px)
+            margin-bottom 16px
+
+
+
+        p
+          color #ffffff
+          font-family "Market Fresh"
+          font-size 14px
+          font-weight 400
+          text-align center
+          @media (min-width 1280px)
+            font-size 16px
+            font-weight 400
+
+
+
+      .steps-block
+        display none
+        @media (min-width 768px)
+          width 100%
+          height auto
+          display flex
+          display -webkit-flex
+          justify-content space-between
+          align-items center
+          flex-direction row
+          margin-bottom 54px
+        @media (min-width 1280px)
+          max-width 780px
+
+
+        .step
+          width 25%
+          height auto
+          display flex
+          display -webkit-flex
+          justify-content center
+          align-items center
+          flex-direction column
+          position relative
+          &:nth-of-type(1)
+            &:after
+              content " "
+              width 65%
+              height 0
+              border 1px dashed #eee
+              position absolute
+              top 20%
+              left 66%
+          &:nth-of-type(2)
+            &:after
+              content " "
+              width 65%
+              height 0
+              border 1px dashed #eee
+              position absolute
+              top 20%
+              left 66%
+          &:nth-of-type(3)
+            &:after
+              content " "
+              width 65%
+              height 0
+              border 1px dashed #eee
+              position absolute
+              top 20%
+              left 66%
+
+
+
+    .step-img
+            margin-bottom 21px
+
+          .step-text
+            p
+              color #ffffff
+              font-family "Market Fresh"
+              font-size 14px
+              font-weight 400
+              line-height 15px
+              text-align center
+
+
+      form
+        width 100%
+        height auto
+        display flex
+        display -webkit-flex
+        justify-content center
+        align-items center
+        flex-direction column
+        margin-bottom 54px
+        @media (min-width 768px)
+          flex-direction row
+          justify-content space-between
+        @media (min-width 1280px)
+          max-width 780px
+
+        input
+          margin-bottom 12px
+          @media (min-width 768px)
+            margin-bottom 0
+
+        button
+          margin-top 20px
+          @media (min-width 768px)
+            margin-top 0

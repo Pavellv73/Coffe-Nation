@@ -1,0 +1,45 @@
+section.block2.cnt
+    div.block2-content
+        div.block2-head
+            h2 наш ассортимент
+            hr
+
+        div.varieties-blocks.row
+            div.variety-block
+                h3 бразилия <br> сантос
+                p.text-gold классический <br> вкус
+
+            div.variety-block
+                h3 колумбия <br> супремо
+                p.text-gold Ореховый <br> аромат
+
+            div.variety-block
+                h3 эфиопия <br> иргачиф
+                p.text-gold цитрусовая <br> кислинка
+
+            div.variety-block
+                h3 эспрессо <br> смесь
+                p.text-gold плотное тело <br> насыщенный <br> вкус
+
+            div.variety-block
+                h3 вендинг <br> смесь
+                p.text-gold идеально для <br> вендинговых <br> автоматов
+
+            div.variety-block
+                h3 Пробник <br> бесплатно
+                p.text-gold заполните <br>
+                    a(href="#" class="questionnaire-popup") анкету
+                    |  и <br> получите
+
+div#questionnaire-popup
+
+    div.logo-popup
+        div.logo-block
+            img(src="img/logo-color.png")
+            p оставьте заявку и получите пробник
+                span  бесплатно
+
+        form(method="post" action="mailer.php")
+            input(name="name" type="email" placeholder="E-mail" required="required")
+            input(name="phone" type="tel" placeholder="Ваш номер телефона" class="phone" required="required")
+            button.button-gold(type="submit") Получить пробник
