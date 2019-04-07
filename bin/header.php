@@ -38,9 +38,8 @@
       </div>
       <form method="post" action="mailer.php">
         <input type="email" name="email" placeholder="E-mail" required="required"/>
-        <input class="phone" type="tel" name="phone" placeholder="Контактный телефон" required="required"/>
-        <input type="hidden" name="download" value="true"/>
-        <button class="button-white" type="submit">Скачать прайс-лист</button>
+        <input class="phone" type="tel" name="phone" placeholder="Контактный телефон" required="required"/><a href="price.pdf" download="download">
+          <button class="button-white" type="submit">Скачать прайс-лист</button></a>
       </form>
     </div>
   </div>

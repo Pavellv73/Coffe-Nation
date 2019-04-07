@@ -4,7 +4,7 @@
     <div class="politic">
       <h3>COFFEE-NATION</h3><a class="politic" href="#">Политика конфиденциальности</a>
     </div>
-    <div class="tel"><a href="tel:88003021246">8 800 302 12 46</a>
+    <div class="tel"><a href="tel:88003021246">8 908 891 82 90</a>
       <p>звонок бесплатный</p>
     </div>
     <div class="nt-logo"><a href="http://worknext.ru/" target="_blank"><img src="img/logotype.png"/></a></div>

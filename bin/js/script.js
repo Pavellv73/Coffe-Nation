@@ -61,6 +61,7 @@ $(document).ready(function () {
         }, success: function (e) {
             if (1 == t) {
                 var n = document.createElement("a");
+                yaCounter44768152.reachGoal(r);
                 n.setAttribute("href", "/price.pdf"), n.setAttribute("download", "download"), onload = n.click(), t = !1
             }
             console.info(e), $("input").removeClass("incorrect correct"), $.fancybox($(".thnx"))

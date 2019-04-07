@@ -65,7 +65,7 @@
           <form method="post" action="mailer.php">
             <input type="email" name="email" placeholder="E-mail" required="required">
             <input class="phone" type="tel" name="phone" placeholder="Контактный телефон" required="required">
-            <input type="hidden" name="download" value="true">
+            <input type="hidden" name="Download_the_price" value="true">
             <button class="button-white" type="submit">Скачать прайс-лист</button>
           </form>
         </div>
@@ -135,13 +135,13 @@
             <p>Звоните, пробуйте! Будем рады видеть вас в числе постоянных партнеров!</p>
           </div><a class="read-more" href="#">Читать дальше…</a>
         </div>
-        <div class="about-video"><a class="video-popup" href=" "><img src="img/video-button.svg"></a><a class="video-popup" href=" ">
+        <div class="about-video"><a class="video-popup" href=" " onclick="yaCounter44768152.reachGoal('video_about_us'); return true;"><img src="img/video-button.svg"></a><a class="video-popup" href=" ">
             <p>Видео о нас</p></a></div>
       </div>
     </section>
     <div id="video-pop">
       <div class="video-pop">
-        <iframe src="https://www.youtube.com/embed/ZurOA494CJc?ecver=1" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/earNpQ7Nxgs?rel=0&amp;showinfo=0?ecver=2" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
     <section class="block4 cnt">
@@ -152,7 +152,8 @@
         <form method="post" action="mailer.php">
           <input name="name" placeholder="Ваше имя" type="text" required="required">
           <input class="phone" name="phone" placeholder="Контактный телефон" required="required">
-          <button class="button-white" type="submit">Узнать</button>
+          <input type="hidden" name="individual_conditions_1" value="true">
+            <button class="button-white" type="submit">Узнать</button>
         </form>
       </div>
     </section>
@@ -226,6 +227,7 @@
         <form method="post" action="mailer.php">
           <input name="name" placeholder="Ваше имя" type="text" required="required">
           <input class="phone" name="phone" placeholder="Контактный телефон" required="required">
+          <input type="hidden" name="individual_conditions_2" value="true">
           <button class="button-white" type="submit">Узнать</button>
         </form>
       </div>
@@ -245,7 +247,7 @@
           </div>
           <div class="adress">
             <h3>АДРЕС</h3>
-            <p>Кофейная компания «Funky Coffee» <br>628400, пр-т Ленина, 59, г. Сургут,<br> ХМАО Тюменской области</p>
+            <p>Кофейная компания «Coffe Nation» <br>628400, пр-т Ленина, 59, г. Сургут,<br> ХМАО Тюменской области</p>
           </div>
           <div class="time-works">
             <h3>ЧАСЫ РАБОТЫ</h3>
@@ -260,7 +262,7 @@
         <div class="politic">
           <h3>COFFEE-NATION</h3><a class="politic" href="#">Политика конфиденциальности</a>
         </div>
-        <div class="tel"><a href="tel:88003021246">8 800 302 12 46</a>
+        <div class="tel"><a href="tel:88003021246">8 908 891 82 90</a>
           <p>звонок бесплатный</p>
         </div>
         <div class="nt-logo"><a href="http://worknext.ru/" target="_blank"><img src="img/logotype.png"></a></div>
@@ -281,5 +283,45 @@
         <h2>Благодарим <br>за обращение!</h2>
       </div>
     </div>
+    <link rel="stylesheet" href="https://cdn.envybox.io/widget/cbk.css">
+<script type="text/javascript" src="https://cdn.envybox.io/widget/cbk.js?wcb_code=ed83462b190ef7e6006142ddb673634b" charset="UTF-8" async></script>
   </body>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+      (function (d, w, c) {
+          (w[c] = w[c] || []).push(function () {
+              try {
+                  w.yaCounter44768152 = new Ya.Metrika({
+                      id: 44768152,
+                      clickmap: true,
+                      trackLinks: true,
+                      accurateTrackBounce: true,
+                      webvisor: true
+                  });
+              } catch (e) {
+              }
+          });
+
+          var n = d.getElementsByTagName("script")[0],
+              s = d.createElement("script"),
+              f = function () {
+                  n.parentNode.insertBefore(s, n);
+              };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+          if (w.opera == "[object Opera]") {
+              d.addEventListener("DOMContentLoaded", f, false);
+          } else {
+              f();
+          }
+      })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript>
+      <div><img src="https://mc.yandex.ru/watch/43540629" style="position:absolute; left:-9999px;" alt=""/></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+
 </html>
